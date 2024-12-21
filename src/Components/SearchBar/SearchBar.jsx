@@ -9,7 +9,7 @@ export default function SearchBar() {
   };
 
   return(
-    <div>
+    <div className="container">
       <input className="search-input"
         type="text"
         placeholder="Sök"
