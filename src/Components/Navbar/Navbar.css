@@ -142,8 +142,16 @@
   scale: 0.9;
 }
 
-.profile-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.profile-div{
+  padding-right: 3vh;
+  border-radius: 50%;
+  border: none;
+}
+
+.profile-div button{
+  cursor: pointer;
+  border-radius: 50%;
+  width: 3vh;
+  height: 3vh;
+  border: none;
 }

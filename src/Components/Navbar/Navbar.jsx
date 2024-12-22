@@ -1,6 +1,7 @@
 import hamburgerIcon from "../../assets/svg/hamburger-menu-icon.svg";
 import notificationIcon from "../../assets/svg/notification-icon.svg";
 import youtubeBoxIcon from "../../assets/youtube_assets/youtube-box-icon.png";
+import profileImg from "../../assets/youtube_assets/profile-icon.svg";
 
 import "./Navbar.css";
 
@@ -42,7 +43,11 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className="profile-btn">(profile)</div>
+        <div className="profile-div">
+          <button>
+            <img src={profileImg } alt="profileImg missing" />
+          </button>
+        </div>
       </div>
     </div>
   );
