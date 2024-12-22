@@ -1,14 +1,92 @@
-.container{
+.container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: auto;
+}
+
 .search-input {
-  margin: 10px;
-  padding: 10px;
-  width: 40vh;
-  border-radius: 15px;
+  padding: 10px 0px 10px 10px;
+  width: 51vh;
+  height: 3.8vh;
+  border-radius: 15px 0px 0px 15px;
   color: white;
   background-color: transparent;
+  border: 1px solid rgb(66, 65, 66);
+  box-sizing: border-box;
+}
+
+.keyboard-button {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.keyboard-icon {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 0 15px 15px 0;
+  background-color: rgb(34, 34, 34);
+  border: 1px solid rgb(66, 65, 66);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  height: 1.4vh;
+  width: 40px;
+  scale: 1.5;
+}
+
+.microphone-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 44, 44); 
+  margin-left: 2vh;
+  border-radius: 50%;
+  border: none;
+  width: 3.7vh;
+  height: 3.7vh;
+}
+
+.microphone-div:hover {
+  background-color: rgb(90, 89, 90);
+}
+
+.microphone-icon-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.microphone-icon-btn img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.1vh;
+  background-color: transparent;
+  border: none;
 }

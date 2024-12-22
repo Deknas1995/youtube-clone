@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
   width: 100%;
   height: 7vh;
   border: 1px solid white;  /* REMOVE LATER */
@@ -22,9 +22,8 @@
   border: 1px solid red; /* REMOVE LATER */
   width: 100%;
   height: 100%;
-  justify-content: flex-start; /* Align the elements without space between them */
+  justify-content: flex-start; 
 }
-
 
 /* Hamburger icon */
 .hamburger-menu-btn {
@@ -33,23 +32,26 @@
   cursor: pointer; 
   justify-content: center;
   align-items: center;
-  padding-right: 3vh;
+  padding: 1vh;
   border-radius: 50%;
   transition: background-color 0.3s ease;
+  scale: 0.9;
 }
 
 .hamburger-menu-btn:hover {
   background-color: rgb(71, 71, 71); 
 }
 
-
-/* youtube icon */
-.youtube-box-logo{
-  padding-right: 0.7vh;
+.youtube-logo-container{
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 3px;
-  scale: 100%;
+  padding-left: 9px;
+}
+/* youtube img icon */
+.youtube-box-logo{
+  height: 60%;
+  padding-right: 2px;
 }
 
 .youtube-text {
@@ -57,7 +59,7 @@
   justify-content: center;
   align-items: center;
   font-family: 'Youtube-Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 3vh;
+  font-size: 19px;
 }
 
 .country-tag{
@@ -68,39 +70,80 @@
 }
 
 /****************************** Center ******************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Center */
 .center {
   flex-grow: 1; 
   display: flex;
   justify-content: center; 
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgb(170, 50, 170);/* REMOVE LATER */
-}
-
-/* End */
-.end {
-  display: flex;
-  justify-content: flex-end; 
+  align-items: center;
   width: 100%;
   height: 100%;
   border: 1px solid rgb(22, 126, 44);/* REMOVE LATER */
+}
+
+/******************************  END  ******************************/
+.end {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+  border: 1px solid rgb(22, 55, 126);/* REMOVE LATER */
+}
+
+
+.create-btn-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 44, 44); 
+  width: 9vh;
+  height: 3.3vh;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.create-btn-div button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.create-btn-div span{
+  color: white;
+  font-size: 3vh;
+  padding-right: 0.8vh;
+}
+
+.create-btn-div p{
+  color: white;
+}
+
+.notification-btn-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 4vh;
+}
+
+.notification-btn-div:hover{
+  background-color: rgb(44, 44, 44); 
+}
+
+.notification-btn-div button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.notification-btn-div img{
+  scale: 0.9;
+}
+
+.profile-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
